@@ -1,0 +1,21 @@
+[90m= [39m[34;4mApp\Models\Article[39;24m {#8258
+    [34mid[39m: [35m9[39m,
+    [34muser_id[39m: [35m2[39m,
+    [34mtitle[39m: [32m"[39m[32mQuod impedit minima quaerat minus voluptatem sit ea modi.[39m[32m"[39m,
+    [34mslug[39m: [32m"[39m[32mquod-impedit-minima-quaerat-minus-voluptatem-sit-ea-modi[39m[32m"[39m,
+    [34mcontent[39m: <<<[32mEOS[39m
+      [32mNesciunt placeat corrupti tempora doloribus. Est nam cumque odit magnam vel. Magnam molestias explicabo vel explicabo.[39m
+      
+      [32mHic exercitationem repellat est qui. Ipsum incidunt id rerum debitis molestias. Ut itaque ut consequatur in.[39m
+      
+      [32mAutem soluta temporibus cupiditate eaque. Totam consectetur ad quisquam vel fuga. Voluptatem suscipit recusandae asperiores ipsam temporibus dolores.[39m
+      
+      [32mEx a quas tempora aut quasi optio. Debitis est sed pariatur nemo ea exercitationem officia. Deserunt est eaque sit et labore nihil praesentium.[39m
+      
+      [32mAliquid fugiat earum qui occaecati. Aperiam et et aut ipsa dolorem rerum. Commodi est sed ipsum nobis.[39m
+      [32mEOS[39m,
+    [34mstatus[39m: [32m"[39m[32mdraft[39m[32m"[39m,
+    [34mpublished_at[39m: [36mnull[39m,
+    [34mcreated_at[39m: [32m"[39m[32m2026-05-25 13:24:19[39m[32m"[39m,
+    [34mupdated_at[39m: [32m"[39m[32m2026-05-25 13:24:19[39m[32m"[39m,
+  }

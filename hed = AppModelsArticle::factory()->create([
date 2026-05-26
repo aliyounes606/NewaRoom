@@ -1,0 +1,21 @@
+[90m= [39m[34;4mApp\Models\Article[39;24m {#7708
+    [34muser_id[39m: [35m13[39m,
+    [34mtitle[39m: [32m"[39m[32mIllo ullam enim nesciunt quam voluptatum.[39m[32m"[39m,
+    [34mslug[39m: [32m"[39m[32millo-ullam-enim-nesciunt-quam-voluptatum[39m[32m"[39m,
+    [34mcontent[39m: <<<[32mEOS[39m
+      [32mQuod sint laboriosam quia. Illo odio magnam quia aliquid hic quia.[39m
+      
+      [32mRerum sed ut vitae et autem deserunt nemo numquam. Ipsa qui quisquam consequuntur ratione. Quod ut molestias id qui sed ipsam esse nesciunt. Officia odio at cum accusamus.[39m
+      
+      [32mEsse expedita eligendi eum quidem aperiam maiores praesentium. Cum dolor ea et amet. Tenetur esse aut cumque alias. Odit sunt enim consectetur et.[39m
+      
+      [32mNemo libero occaecati et tempora ratione autem. Voluptatem accusamus ea dignissimos nihil ducimus quia magni. Rerum nobis voluptatem saepe voluptatem vel nihil pariatur.[39m
+      
+      [32mQuas magni ad consectetur modi facilis provident eos. Ex fugiat non et placeat eum dolor. Ullam sint voluptas odit et. Occaecati distinctio veniam non.[39m
+      [32mEOS[39m,
+    [34mstatus[39m: [32m"[39m[32mdraft[39m[32m"[39m,
+    [34mpublished_at[39m: [36mnull[39m,
+    [34mcreated_at[39m: [32m"[39m[32m2026-04-15 14:28:09[39m[32m"[39m,
+    [34mupdated_at[39m: [32m"[39m[32m2026-04-15 14:28:09[39m[32m"[39m,
+    [34mid[39m: [35m52[39m,
+  }
