@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
+use App\Jobs\SendArticlePublishedNotification;
+use App\Mail\ArticlePublishedMail;
 use App\Models\Article;
 use App\Services\ArticleService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Mail;
 
 /**
  * Thin controller for Article resources.
@@ -92,5 +95,26 @@ class ArticleController extends Controller
         $this->articleService->delete($article);
 
         return response()->json(['message' => 'Article deleted.'], 200);
+    }
+
+    /**
+     * Publish a draft article.
+     *
+     * Delegates status transition to ArticleService (which fires ArticlePublished).
+     * Also dispatches the subscriber notification job and sends a confirmation
+     * mail to the writer — each step is independently fakeable in tests.
+     */
+    public function publish(Article $article): JsonResponse
+    {
+        $this->authorize('update', $article);
+
+        $article = $this->articleService->publish($article);
+
+        SendArticlePublishedNotification::dispatch($article);
+
+        $article->loadMissing('user');
+        Mail::to($article->user)->send(new ArticlePublishedMail($article));
+
+        return response()->json($article);
     }
 }

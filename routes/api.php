@@ -4,6 +4,8 @@ use App\Http\Controllers\Api\DashboardController;
 use App\Http\Controllers\Api\V1\ArticleController as V1ArticleController;
 use App\Http\Controllers\Api\V2\ArticleController as V2ArticleController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\AttachmentController;
+use App\Http\Controllers\CommentController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -29,6 +31,9 @@ Route::middleware(['auth:sanctum', 'api.log', 'throttle:api'])->group(function (
     Route::post('/articles', [ArticleController::class, 'store']);
     Route::put('/articles/{article}', [ArticleController::class, 'update']);
     Route::delete('/articles/{article}', [ArticleController::class, 'destroy']);
+    Route::patch('/articles/{article}/publish', [ArticleController::class, 'publish']);
+    Route::post('/articles/{article}/comments', [CommentController::class, 'store']);
+    Route::post('/articles/{article}/attachments', [AttachmentController::class, 'store']);
 });
 
 //  Admin Dashboard Routes 
